@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>BINP29 Project</title>
+<head>
+  <style>
+    body {
+      background-color: #F0F8FF;
+      text-align: center;
+    }
+    h1 {
+      color: #005B5B;
+      font-family: Lucida Handwriting;
+      font-size: 500%;
+    }
+    p  {
+      color: #2F4F4F;
+      font-family: Times New Roman;
+      font-size: 150%;
+    }
+    .header {
+      background-image: url({{bg_src}});
+      background-attachment: fixed;
+      background-size: 50% 50%;
+      opacity: 0.7
+    }
+    .alert {
+      color: red;
+      font-family: Garamond;
+      font-size: 150%;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <h1><b>Build a de Bruijn graph!</b></h1>
+  </div>
+  <form method = "POST">
+    <p>Please input a dna sequence:</p>
+    <input type = "text" name = "seq">
+    <p>Please input an integer K for Kmers:</p>
+    <input type = "text" name = "Kmer">
+    <p><input type = "submit" value = "submit"></p>
+  </form>
+  <div class="alert">
+  <i>{{ msg }}</i>
+  </div>
+</body>
+</html>

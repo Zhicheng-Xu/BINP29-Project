@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>BINP29 Project</title>
+<head>
+  <style>
+    body {
+      background-color: #F0F8FF;
+      text-align: center;
+    }
+    h1 {
+      color: #005B5B;
+      font-family: Lucida Handwriting;
+      font-size: 500%;
+    }
+    p {
+      color: #2F4F4F;
+      font-family: Times New Roman;
+      font-size: 150%;
+    }
+
+    .header {
+      background-image: url({{bg_src}});
+      background-attachment: fixed;
+      background-size: 50% 50%;
+      opacity: 0.7
+    }
+    .alert {
+      color: red;
+      font-family: Garamond;
+      font-size: 150%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+  <h1><b>Build a de Bruijn graph!</b></h1>
+  </div>
+  <p>The original sequence is:</p>
+  <p style="color: blue"> {{ old_seq }} </p>
+  <p>The reassembled sequence is:</p>
+  <p style="color: red"> {{ new_seq }} </p>
+  <p style="color: #005B5B; font-family: Arial">Similarity: {{ similarity }}%</p>
+  <p>The de Bruijn graph is shown as follow:</p>
+  <img src={{ img_src }} alt="A de Bruijn graph of the input sequence" >
+
+</body>
+</html>
