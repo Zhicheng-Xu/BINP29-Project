@@ -4,8 +4,14 @@ Users need to input a nucleotide sequence and an integer for K value to gennerat
 The 'static' directory is for image storage. For each different sequence input, users need to clear this directory manually except for the background image 'network.png' which is used to build the web page. This is because browser cache would remember the existing imaged even though the image has been replaced in the directory.  
 The 'templates' directory is for templates storage of the web program.  
 For any questions, please contact zh2680xu-s@student.lu.se  
+
+##### Run the script
+
+    python3 SeqGraph.py
+    
+The outputs will provide a URL for the program. Navigate to it from your browser and the program will display.
   
-###### Python Implement
+##### Python Implement
 Initialize a class named 'Node' that has three attritubes: label for K-1 mer, indegree for the number of edges that point to this node, and outdegree for the number of edges that point out of this node.  
 
     class Node:
